@@ -1,0 +1,23 @@
+{
+  "name": "1_reloj",
+  "version": "1.0.0",
+  "description": "web app showing local and remote clock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariaventosa/cloud-clock.git"
+  },
+  "author": "Maria Ventosa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariaventosa/cloud-clock/issues"
+  },
+  "homepage": "https://github.com/mariaventosa/cloud-clock#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "socket.io": "^2.2.0"
+  }
+}
