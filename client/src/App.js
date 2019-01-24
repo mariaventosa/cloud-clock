@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Clock from './Clock'; // Custom Clock element
 
 let time = new Date().toLocaleString();
 
@@ -10,7 +11,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p> The time is {time} </p>
+          <Clock> </Clock>
         </header>
       </div>
     );
