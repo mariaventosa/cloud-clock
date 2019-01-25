@@ -33,7 +33,7 @@ class Clock extends React.Component {
 	render() {
 		return (
 			<p> 
-				The local time is {this.state.time}
+				Local Time: {this.state.time}
 			</p>
 		);
 	}
