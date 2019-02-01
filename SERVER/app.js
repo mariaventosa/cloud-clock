@@ -25,9 +25,10 @@ io.on("connection", socket => {
 
 const getTimeAndSend = async socket => {
   try {
+    
+    //date = date.toLocaleString()
     var date = new Date()
-    date = date.toLocaleString()
-    socket.emit("Date", date);
+    socket.emit("Date",  date.toLocaleString());
   } catch (error) {
     console.error('Error!!');
   }

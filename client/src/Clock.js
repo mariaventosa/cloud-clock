@@ -1,5 +1,6 @@
 // Clock component
 import React from 'react';
+import Clock2 from 'react-clock';
 
 // Clock class
 class Clock extends React.Component {
@@ -8,7 +9,7 @@ class Clock extends React.Component {
 		super(props);
 		// sets initial state
 		this.state = {
-			time: new Date().toLocaleString()
+			time: new Date()
 		};
 	}
 	// called when component inserted in DOM
@@ -26,14 +27,15 @@ class Clock extends React.Component {
 	tick() {
 		// use setState to update state
 		this.setState({
-			time: new Date().toLocaleString()
+			time: new Date()
 		});
 	}
 	// returns element
 	render() {
 		return (
 			<p> 
-				Local Time: {this.state.time}
+			<Clock2 value={this.state.time} />
+				<h1 class="hora-dig">{this.state.time.toLocaleString()}</h1>
 			</p>
 		);
 	}
