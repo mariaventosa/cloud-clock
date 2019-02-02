@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       // sets initial state
       response: false,
-      endpoint: "http://127.0.0.1:4001"
+      endpoint: "http://127.0.0.1:4001" //Server's address
     };
   }
   // called when component inserted in DOM
